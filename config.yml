@@ -11,7 +11,7 @@ constr_months:       36
 tax_rate:            0.26
 macrs_5:             [0.20, 0.32, 0.19, 0.12, 0.11, 0.06]
 net_proceeds_tax:    0.04
-property_tax_rate:   0.01875
+property_tax_rate:   0.03068
 assessed_pct:        0.35
 nv_tax_floor:        0.25
 

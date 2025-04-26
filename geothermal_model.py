@@ -155,7 +155,8 @@ def build_case(
 
         dep = macrs_basis*(c["macrs_5"][yr-1] if yr<=len(c["macrs_5"]) else 0)
         assess_ratio = max(c["assessed_pct"]*(1-0.05*(yr-1)), c["nv_tax_floor"])
-        prop_tax = c["property_tax_rate"]*assess_ratio*max(net_capex-dep, 0)
+        tax_cost_basis = gross_nom
+        prop_tax = c["property_tax_rate"] * assess_ratio * tax_cost_basis
         taxable  = max(gross - royalty - o_m - dep, 0)
 
         pre_ds.append(gross + ptc - royalty - o_m -

@@ -1,0 +1,76 @@
+plant_capex_mw:      5_600_000
+line_capex_mi:       1_850_000
+interconnect_fixed:  12_000_000
+
+expl_success_prob:   0.80
+dry_hole_cost_m:     25
+
+idc_rate:            0.06
+constr_months:       36
+
+tax_rate:            0.26
+macrs_5:             [0.20, 0.32, 0.19, 0.12, 0.11, 0.06]
+net_proceeds_tax:    0.04
+property_tax_rate:   0.01875
+assessed_pct:        0.35
+nv_tax_floor:        0.25
+
+capacity_payment_kw: 20
+capacity_payment_yrs: 5
+ra_escal:            0.01
+
+# Renewable incentives
+ptc_rate:            27
+rec_price_y1:        12
+rec_esc:             0.02
+merchant_penalty:    0.10
+
+byproduct_base:      500_000
+o_and_m_fixed_kw:    95
+o_and_m_var_kw:      90
+esc_o_and_m_fixed:   0.03
+esc_o_and_m_var:     0.05
+
+generic_esc:         0.00
+well_rework_int:     8
+well_rework_frac:    0.12
+
+basis_adjust:        2.0
+basis_escal:         0.02
+
+int_hours:           0.25
+
+# Decline (hyperbolic → exp tail)
+decl_d1:             0.10
+decl_t_switch:       5
+decl_d2:             0.02
+perf_cf0:            0.90
+perf_min_cf:         0.75
+
+# Royalties
+royalty_rate1:       0.0175
+royalty_rate2:       0.035
+royalty_switch:      11
+
+# Financing & risk
+loan_ltv:            0.60
+loan_rate:           0.050
+loan_tenor:          18
+dsc_min:             1.30
+refi_fee:            0.02
+decom_frac:          0.05
+
+mc_trials:           10000
+capex_overrun_mu:    0.10
+capex_overrun_sigma: 0.15
+
+price_vol_mu:        0.000
+price_vol_sigma:     0.12
+
+# Curtailment
+curtail_p0:          0.01
+curtail_slope:       0.0015
+
+infl_rate:       0.02
+draw_weights:    [0.3, 0.5, 0.2]
+salvage_frac:    0.10
